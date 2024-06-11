@@ -134,9 +134,21 @@ if (mounth == 11 || mounth == 12 || mounth == 1) {
   console.log("Өвлийн улирал", mounth);
 }
 
-//daalgavar 6
+//daalgavar 6 bagshaas asuuh
 let XY = 85;
 let ZD = 75;
 let CB = 96;
 let SE = 69;
-switch()
+
+//daalgavar 7 bagshaas asuuh
+
+//daalgavar 8
+let Bat = 67;
+let BatiinUnelgee;
+let Ochir = 59;
+let OchiriinUnelgee;
+switch (Bat) {
+  case 60:
+    BatiinUnelgee = "Маш муу";
+    break;
+}
