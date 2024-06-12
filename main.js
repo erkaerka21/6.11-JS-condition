@@ -139,4 +139,140 @@ let XY = 85;
 let ZD = 75;
 let CB = 96;
 let SE = 69;
-switch()
+if (XY > 80 && ZD > 80 && CB > 80 && SE > 80) {
+  console.log("80 аас их тоонуудын нийлбэр", XY + ZD + CB + SE);
+} else if (XY < 80 && ZD > 80 && CB > 80 && SE > 80) {
+  console.log("80 аас их тоонуудын нийлбэр", ZD + CB + SE);
+} else if (XY > 80 && ZD < 80 && CB > 80 && SE > 80) {
+  console.log("80 аас их тоонуудын нийлбэр", XY + CB + SE);
+} else if (XY > 80 && ZD > 80 && CB < 80 && SE > 80) {
+  console.log("80 аас их тоонуудын нийлбэр", ZD + XY + SE);
+} else if (XY > 80 && ZD > 80 && CB > 80 && SE < 80) {
+  console.log("80 аас их тоонуудын нийлбэр", ZD + CB + XY);
+} else if (XY < 80 && ZD < 80 && CB < 80 && SE < 80) {
+  console.log("80 аас их тоонуудын нийлбэр");
+} else if (XY < 80 && ZD < 80 && CB > 80 && SE > 80) {
+  console.log("80 аас их тоонуудын нийлбэр", CB + SE);
+} else if (XY < 80 && ZD < 80 && CB < 80 && SE > 80) {
+  console.log("80 аас их тоонуудын нийлбэр", SE);
+} else if (XY > 80 && ZD > 80 && CB < 80 && SE < 80) {
+  console.log("80 аас их тоонуудын нийлбэр", ZD + XY);
+} else if (XY > 80 && ZD < 80 && CB < 80 && SE < 80) {
+  console.log("80 аас их тоонуудын нийлбэр", XY);
+} else if (XY > 80 && ZD < 80 && CB > 80 && SE < 80) {
+  console.log("80 аас их тоонуудын нийлбэр", CB + XY);
+} else if (XY < 80 && ZD < 80 && CB > 80 && SE < 80) {
+  console.log("80 аас их тоонуудын нийлбэр", CB);
+} else if (XY < 80 && ZD > 80 && CB > 80 && SE < 80) {
+  console.log("80 аас их тоонуудын нийлбэр", ZD + CB);
+} else if (XY < 80 && ZD > 80 && CB < 80 && SE < 80) {
+  console.log("80 аас их тоонуудын нийлбэр", ZD);
+} else if (XY < 80 && ZD > 80 && CB < 80 && SE > 80) {
+  console.log("80 аас их тоонуудын нийлбэр", ZD + SE);
+} else if (XY > 80 && ZD < 80 && CB < 80 && SE > 80) {
+  console.log("80 аас их тоонуудын нийлбэр", SE + XY);
+}
+
+// if (XY > 80) {
+//   sum = sum + XY;
+// } if (ZD > 80) {
+//   sum = sum + ZD;
+// } if (CB > 80) {
+//   sum = sum + CB;
+// } if (SE > 80) {
+//   sum = sum + SE;
+// }
+
+//daalgavar 7
+let X1 = 3; //XY
+let X2 = 7; //ZD
+let X3 = 2; //CB
+let X4 = 4; //SE
+let urjver = 1;
+// if (X1 < 5 && X2 < 5 && X3 < 5 && X4 < 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X1 * X2 * X3 * X4);
+// } else if (X1 > 5 && X2 < 5 && X3 < 5 && X4 < 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X2 * X3 * X4);
+// } else if (X1 < 5 && X2 > 5 && X3 < 5 && X4 < 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X1 * X3 * X4);
+// } else if (X1 < 5 && X2 < 5 && X3 > 5 && X4 < 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X2 * X1 * X4);
+// } else if (X1 < 5 && X2 < 5 && X3 < 5 && X4 > 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X2 * X3 * X1);
+// } else if (X1 > 5 && X2 > 5 && X3 > 5 && X4 > 5) {
+//   console.log("5 аас бага тоонуудын үржвэр");
+// } else if (X1 > 5 && X2 > 5 && X3 < 5 && X4 < 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X3 * X4);
+// } else if (X1 > 5 && X2 > 5 && X3 > 5 && X4 < 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X4);
+// } else if (X1 < 5 && X2 < 5 && X3 > 5 && X4 > 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X2 * X1);
+// } else if (X1 < 5 && X2 > 5 && X3 > 5 && X4 > 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X1);
+// } else if (X1 < 5 && X2 > 5 && X3 < 5 && X4 > 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X3 * X1);
+// } else if (X1 > 5 && X2 > 5 && X3 < 5 && X4 > 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X3);
+// } else if (X1 > 5 && X2 < 5 && X3 < 5 && X4 > 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X2 * X3);
+// } else if (X1 > 5 && X2 < 5 && X3 > 5 && X4 > 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X2);
+// } else if (X1 > 5 && X2 < 5 && X3 > 5 && X4 < 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X2 * X4);
+// } else if (X1 < 5 && X2 > 5 && X3 > 5 && X4 < 5) {
+//   console.log("5 аас бага тоонуудын үржвэр", X4 * X1);
+// }
+
+if (X1 < 5) {
+  urjver = urjver * X1;
+}
+if (X2 < 5) {
+  urjver = urjver * X2;
+}
+if (X3 < 5) {
+  urjver = urjver * X3;
+}
+if (X4 < 5) {
+  urjver = urjver * X4;
+}
+console.log("5 аас бага тоонуудын үржвэр", urjver);
+
+//daalgavar 8
+let Bat = 67;
+let Ochir = 59;
+let BatiinAvsanUnelgee;
+let OchiriinAvsanUnelgee;
+if (Bat < 60) {
+  BatiinAvsanUnelgee = "Маш муу";
+} else if ((Bat) => 60 && Bat < 70) {
+  BatiinAvsanUnelgee = "Хангалттай";
+} else if ((Bat) => 70 && Bat < 80) {
+  BatiinAvsanUnelgee = "Дунд";
+} else if ((Bat) => 80 && Bat < 90) {
+  BatiinAvsanUnelgee = "Сайн";
+} else if ((Bat) => 90 && Bat <= 100) {
+  BatiinAvsanUnelgee = "Маш сайн";
+}
+console.log("Батын авсан дүн : 67 - ", BatiinAvsanUnelgee);
+
+if (Ochir < 60) {
+  OchiriinAvsanUnelgee = "Маш муу";
+} else if ((Bat) => 60 && Bat < 70) {
+  OchiriinAvsanUnelgee = "Хангалттай";
+} else if ((Bat) => 70 && Bat < 80) {
+  OchiriinAvsanUnelgee = "Дунд";
+} else if ((Bat) => 80 && Bat < 90) {
+  OchiriinAvsanUnelgee = "Сайн";
+} else if ((Bat) => 90 && Bat <= 100) {
+  OchiriinAvsanUnelgee = "Маш сайн";
+}
+console.log("Очирын авсан дүн : 59 - ", OchiriinAvsanUnelgee);
+
+//daalgavar 9
+let huvisagch1 = 120;
+let huvisagch2 = 33;
+let huvisagch3 = 10;
+let huvisagch4 = 12;
+if (huvisagch1 > huvisagch2) {
+  console.log("Хамгийн бага утга нь : ", huvisagch2);
+}
