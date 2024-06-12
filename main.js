@@ -276,15 +276,3 @@ let huvisagch4 = 12;
 if (huvisagch1 > huvisagch2) {
   console.log("Хамгийн бага утга нь : ", huvisagch2);
 
-//daalgavar 7 bagshaas asuuh
-
-//daalgavar 8
-let Bat = 67;
-let BatiinUnelgee;
-let Ochir = 59;
-let OchiriinUnelgee;
-switch (Bat) {
-  case 60:
-    BatiinUnelgee = "Маш муу";
-    break;
-}
