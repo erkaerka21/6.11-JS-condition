@@ -134,7 +134,7 @@ if (mounth == 11 || mounth == 12 || mounth == 1) {
   console.log("Өвлийн улирал", mounth);
 }
 
-//daalgavar 6 bagshaas asuuh
+//daalgavar 6
 let XY = 85;
 let ZD = 75;
 let CB = 96;
