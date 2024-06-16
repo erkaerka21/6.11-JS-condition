@@ -273,6 +273,79 @@ let huvisagch1 = 120;
 let huvisagch2 = 33;
 let huvisagch3 = 10;
 let huvisagch4 = 12;
-if (huvisagch1 > huvisagch2) {
+if (
+  huvisagch1 < huvisagch2 &&
+  huvisagch1 < huvisagch3 &&
+  huvisagch1 < huvisagch4
+) {
+  console.log("Хамгийн бага утга нь : ", huvisagch1);
+} else if (
+  huvisagch2 < huvisagch1 &&
+  huvisagch2 < huvisagch3 &&
+  huvisagch2 < huvisagch4
+) {
   console.log("Хамгийн бага утга нь : ", huvisagch2);
+} else if (
+  huvisagch3 < huvisagch1 &&
+  huvisagch3 < huvisagch2 &&
+  huvisagch3 < huvisagch4
+) {
+  console.log("Хамгийн бага утга нь : ", huvisagch3);
+} else if (
+  huvisagch4 < huvisagch1 &&
+  huvisagch4 < huvisagch3 &&
+  huvisagch4 < huvisagch2
+) {
+  console.log("Хамгийн бага утга нь : ", huvisagch4);
+}
 
+//daalgavar10
+let teamAscore = [96, 108, 89];
+let sumA = 0;
+let teamBscore = [88, 91, 110];
+let sumB = 0;
+console.log("А багийн авсан оноо : ", teamAscore);
+for (let i = 0; i < teamAscore.length; i++) {
+  sumA += teamAscore[i];
+}
+averageA = sumA / teamAscore.length;
+console.log("А багийн авсан дундаж оноо : ", averageA);
+
+console.log("Б багийн авсан оноо : ", teamBscore);
+for (let i = 0; i < teamBscore.length; i++) {
+  sumB += teamBscore[i];
+}
+averageB = sumB / teamBscore.length;
+console.log("Б багийн авсан дундаж оноо : ", averageB);
+
+if (averageA > 100 || averageB > 100) {
+  if (averageA > averageB) {
+    console.log("А баг ялсан");
+  } else if (averageB > averageA) {
+    console.log("Б баг ялсан");
+  } else {
+    console.log("2 баг тэнцсэн");
+  }
+} else {
+  console.log("ялагч байхгүй");
+}
+
+//daalgavar11
+let height = "180cm";
+let age = 11;
+let hasAdult = false;
+if ((height >= "140cm" && age >= 10) || hasAdult === true) {
+  console.log("дугуй унаж болно.");
+} else {
+  console.log("not allowed to ride");
+}
+
+//daalgavar12
+let numbers = [7, 22, 13, 30];
+let sumIndivisible = 0;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 11 !== 0) {
+    sumIndivisible += numbers[i];
+  }
+}
+console.log(sumIndivisible);
